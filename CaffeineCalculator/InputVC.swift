@@ -15,12 +15,25 @@ class InputVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var weightTxt: UITextField!
     @IBOutlet weak var caffeineTxt: UITextField!
     
+    @IBOutlet weak var savedCaffieneLbl: UILabel!
+    
     let limitLength = 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ageTxt.delegate = self
+        let stringKey = UserDefaults.standard
+        savedCaffieneLbl.text = stringKey.string(forKey: "savedStringKey")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        let stringKey = UserDefaults.standard
+        savedCaffieneLbl.text = stringKey.string(forKey: "savedStringKey")
+        ageTxt.text = ""
+        weightTxt.text = ""
+        caffeineTxt.text = ""
+        
     }
     
     
@@ -30,9 +43,46 @@ class InputVC: UIViewController, UITextFieldDelegate {
         weightTxt.resignFirstResponder()
         caffeineTxt.resignFirstResponder()
     }
-    @IBAction func loadClockPressed(_ sender: Any) {
-        performSegue(withIdentifier: "CaffeineClockVC", sender: self)
+    
+    @IBAction func savedCaffeine(_ sender: Any) {
+        let caffeineText = caffeineTxt.text
+        
+        // Create key
+        UserDefaults.standard.set(caffeineText, forKey: "savedStringKey")
+        UserDefaults.standard.synchronize()
+        
+//        let alert = UIAlertController(title: "Saved", message: "Caffeine consumed has been saved", preferredStyle: UIAlertControllerStyle.alert)
+//        alert.addAction(UIAlertAction(title: "A thing", style: .default) { action in
+//            //action.title
+//        })
+//        self.present(alert, animated: true)
     }
+    @IBAction func checkForInput(_ sender: Any) {
+        
+        if ageTxt.text?.isEmpty ?? true {
+            // alert
+            let alert = UIAlertController(title: "Enter Information", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if weightTxt.text?.isEmpty ?? true {
+            // alert
+            let alert = UIAlertController(title: "Enter Information", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else if caffeineTxt.text?.isEmpty ?? true {
+            // alert
+            let alert = UIAlertController(title: "Enter Information", message: "Please fill out all text fields.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: "CaffeineClockVC", sender: self)
+        }
+    }
+    
+//    @IBAction func loadClockPressed(_ sender: Any) {
+//        performSegue(withIdentifier: "CaffeineClockVC", sender: self)
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
         if let destination = segue.destination as?
