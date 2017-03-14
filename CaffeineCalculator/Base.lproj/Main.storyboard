@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InputVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InputVC" customModule="CaffeineCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq9-mO-lz9">
+                                <rect key="frame" x="20" y="157" width="335" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Ane-vM-Inj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your age..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-34-vCG">
+                                <rect key="frame" x="20" y="190" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UJo-W6-mBm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uar-Hc-t1K">
+                                <rect key="frame" x="20" y="250" width="335" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Opx-ga-MU5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caffeine consumed (Mg)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmC-As-MNM">
+                                <rect key="frame" x="20" y="343" width="335" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="pbV-Wy-9w7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your weight..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qns-VP-xM7">
+                                <rect key="frame" x="20" y="283" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yUi-lA-Psa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter caffeine consumed in milligrams..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-NI-gM9">
+                                <rect key="frame" x="20" y="376" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="w5V-R3-qHQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6Y-Vt-BFV">
+                                <rect key="frame" x="155" y="446" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="0u0-Pp-DjU"/>
+                                    <constraint firstAttribute="height" constant="30" id="eBS-ik-zPT"/>
+                                </constraints>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="loadClockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzB-sl-lFI"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5K-KA-s4u" userLabel="Divider">
+                                <rect key="frame" x="20" y="131" width="335" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="M3E-ai-0Jf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="ebf-hL-g5a"/>
+                                    <constraint firstAttribute="width" constant="335" id="k4s-hL-YP6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caffeine Cosumption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRA-iH-FfE">
+                                <rect key="frame" x="84" y="65" width="207" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="8av-hs-7Tb"/>
+                                    <constraint firstAttribute="height" constant="21" id="oPB-8I-ziY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23860012755102042" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x5K-KA-s4u" firstAttribute="top" secondItem="xRA-iH-FfE" secondAttribute="bottom" constant="45" id="6GX-qQ-PAz"/>
+                            <constraint firstItem="uar-Hc-t1K" firstAttribute="leading" secondItem="xZa-34-vCG" secondAttribute="leading" id="6He-Hf-hPP"/>
+                            <constraint firstItem="xZa-34-vCG" firstAttribute="leading" secondItem="mq9-mO-lz9" secondAttribute="leading" id="6wC-WA-qQv"/>
+                            <constraint firstItem="mq9-mO-lz9" firstAttribute="top" secondItem="x5K-KA-s4u" secondAttribute="bottom" constant="25" id="8LA-R5-BMj"/>
+                            <constraint firstItem="Myt-NI-gM9" firstAttribute="leading" secondItem="HmC-As-MNM" secondAttribute="leading" id="97X-J7-eG1"/>
+                            <constraint firstItem="HmC-As-MNM" firstAttribute="trailing" secondItem="qns-VP-xM7" secondAttribute="trailing" id="DkQ-LM-J6R"/>
+                            <constraint firstItem="mq9-mO-lz9" firstAttribute="leading" secondItem="x5K-KA-s4u" secondAttribute="leading" id="FJ4-Wx-Ajm"/>
+                            <constraint firstItem="xZa-34-vCG" firstAttribute="trailing" secondItem="mq9-mO-lz9" secondAttribute="trailing" id="Hfa-aG-EdL"/>
+                            <constraint firstItem="v6Y-Vt-BFV" firstAttribute="top" secondItem="Myt-NI-gM9" secondAttribute="bottom" constant="40" id="O46-Jm-ehw"/>
+                            <constraint firstItem="qns-VP-xM7" firstAttribute="top" secondItem="uar-Hc-t1K" secondAttribute="bottom" constant="10" id="TlE-6u-hTy"/>
+                            <constraint firstItem="qns-VP-xM7" firstAttribute="leading" secondItem="uar-Hc-t1K" secondAttribute="leading" id="TmK-iA-uRb"/>
+                            <constraint firstItem="uar-Hc-t1K" firstAttribute="top" secondItem="xZa-34-vCG" secondAttribute="bottom" constant="30" id="Xte-hz-N8a"/>
+                            <constraint firstItem="x5K-KA-s4u" firstAttribute="centerX" secondItem="xRA-iH-FfE" secondAttribute="centerX" id="dFR-tK-EZ0"/>
+                            <constraint firstItem="Myt-NI-gM9" firstAttribute="trailing" secondItem="HmC-As-MNM" secondAttribute="trailing" id="dMm-0t-BL6"/>
+                            <constraint firstItem="xRA-iH-FfE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="dO0-VK-sde"/>
+                            <constraint firstItem="mq9-mO-lz9" firstAttribute="trailing" secondItem="x5K-KA-s4u" secondAttribute="trailing" id="fmr-WI-XiA"/>
+                            <constraint firstItem="v6Y-Vt-BFV" firstAttribute="centerX" secondItem="Myt-NI-gM9" secondAttribute="centerX" id="jhx-6m-Cny"/>
+                            <constraint firstItem="qns-VP-xM7" firstAttribute="trailing" secondItem="uar-Hc-t1K" secondAttribute="trailing" id="kw4-Ll-CU7"/>
+                            <constraint firstItem="xRA-iH-FfE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lRR-6Y-2vq"/>
+                            <constraint firstItem="HmC-As-MNM" firstAttribute="top" secondItem="qns-VP-xM7" secondAttribute="bottom" constant="30" id="lcc-hN-xtd"/>
+                            <constraint firstItem="HmC-As-MNM" firstAttribute="leading" secondItem="qns-VP-xM7" secondAttribute="leading" id="rUt-Kh-Sao"/>
+                            <constraint firstItem="xZa-34-vCG" firstAttribute="top" secondItem="mq9-mO-lz9" secondAttribute="bottom" constant="10" id="uF4-SJ-LsG"/>
+                            <constraint firstItem="Myt-NI-gM9" firstAttribute="top" secondItem="HmC-As-MNM" secondAttribute="bottom" constant="10" id="wCe-0I-L6N"/>
+                            <constraint firstItem="uar-Hc-t1K" firstAttribute="trailing" secondItem="xZa-34-vCG" secondAttribute="trailing" id="y5z-4d-Doc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTxt" destination="xZa-34-vCG" id="IMc-NW-Tr5"/>
+                        <outlet property="caffeineTxt" destination="Myt-NI-gM9" id="AK2-mY-TIL"/>
+                        <outlet property="weightTxt" destination="qns-VP-xM7" id="TLU-BD-y9L"/>
+                        <segue destination="DrY-Wl-1j7" kind="showDetail" identifier="CaffeineClockVC" id="O4u-T7-Itc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jEU-A0-2IN">
+                    <connections>
+                        <action selector="dismissKeyBoard:" destination="BYZ-38-t0r" id="cr4-Tm-QMp"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+        <!--Caffeine ClockVC-->
+        <scene sceneID="Hbe-CE-5zw">
+            <objects>
+                <viewController id="DrY-Wl-1j7" customClass="CaffeineClockVC" customModule="CaffeineCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ikc-gt-ihz"/>
+                        <viewControllerLayoutGuide type="bottom" id="XfM-VY-kIc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fgB-qj-uMV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRs-Bt-Gpe">
+                                <rect key="frame" x="173" y="180" width="30" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="56u-mQ-uJe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-QY-ZQ4">
+                                <rect key="frame" x="161" y="221" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pEV-PN-yG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caffeine Consumed (Mg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-Nq-Vk7">
+                                <rect key="frame" x="92" y="262" width="192" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tZn-Ec-Bjs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn4-rM-5we">
+                                <rect key="frame" x="16" y="20" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="dm4-rS-hyi"/>
+                                    <constraint firstAttribute="height" constant="30" id="nrl-4J-Rtf"/>
+                                </constraints>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="DrY-Wl-1j7" eventType="touchUpInside" id="UhN-KY-QgM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time remaining until caffeine crash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt2-lG-8nm">
+                                <rect key="frame" x="54" y="139" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oga-j8-ZFm"/>
+                                    <constraint firstAttribute="width" constant="267" id="rJ1-Jd-So1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wt2-lG-8nm" firstAttribute="top" secondItem="Zn4-rM-5we" secondAttribute="bottom" constant="89" id="6MS-LV-qMa"/>
+                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9Bv-6N-i7B"/>
+                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9On-4k-Ozp"/>
+                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9lu-VE-i7t"/>
+                            <constraint firstItem="Zn4-rM-5we" firstAttribute="leading" secondItem="fgB-qj-uMV" secondAttribute="leadingMargin" id="Aas-fG-p00"/>
+                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="top" secondItem="HRs-Bt-Gpe" secondAttribute="bottom" constant="20" id="CQT-4M-UPi"/>
+                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="EZ5-bq-7nf"/>
+                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="top" secondItem="wt2-lG-8nm" secondAttribute="bottom" constant="20" id="Mbh-vf-4PT"/>
+                            <constraint firstItem="wt2-lG-8nm" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="YUn-Kt-d0s"/>
+                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="top" secondItem="jhl-QY-ZQ4" secondAttribute="bottom" constant="20" id="kiR-fh-Aqr"/>
+                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="qv0-b4-yc7"/>
+                            <constraint firstItem="Zn4-rM-5we" firstAttribute="top" secondItem="Ikc-gt-ihz" secondAttribute="bottom" id="rVp-hV-iQ9"/>
+                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="w7R-65-lBl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLbl" destination="HRs-Bt-Gpe" id="wFx-Yl-PeC"/>
+                        <outlet property="caffeineConsumedLbl" destination="Tw8-Nq-Vk7" id="bfk-7D-jgn"/>
+                        <outlet property="weightLbl" destination="jhl-QY-ZQ4" id="uDF-cw-E83"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAB-cQ-scO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="44.527736131934034"/>
+        </scene>
+    </scenes>
+</document>
