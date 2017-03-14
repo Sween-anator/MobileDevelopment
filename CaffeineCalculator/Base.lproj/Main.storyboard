@@ -77,12 +77,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6Y-Vt-BFV">
-                                <rect key="frame" x="155" y="446" width="64" height="30"/>
+                                <rect key="frame" x="155.5" y="446" width="64" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="0u0-Pp-DjU"/>
                                     <constraint firstAttribute="height" constant="30" id="eBS-ik-zPT"/>
                                 </constraints>
-                                <state key="normal" title="Calculate"/>
+                                <state key="normal" title="Input"/>
                                 <connections>
                                     <action selector="loadClockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzB-sl-lFI"/>
                                 </connections>
@@ -162,28 +162,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRs-Bt-Gpe">
-                                <rect key="frame" x="173" y="180" width="30" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Half-Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRs-Bt-Gpe">
+                                <rect key="frame" x="154" y="125" width="66" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="56u-mQ-uJe"/>
+                                    <constraint firstAttribute="height" constant="25" id="AMI-oX-KeZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-QY-ZQ4">
-                                <rect key="frame" x="161" y="221" width="54" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000mg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-Nq-Vk7">
+                                <rect key="frame" x="278" y="30" width="63" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="pEV-PN-yG2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caffeine Consumed (Mg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw8-Nq-Vk7">
-                                <rect key="frame" x="92" y="262" width="192" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="tZn-Ec-Bjs"/>
+                                    <constraint firstAttribute="height" constant="25" id="wk4-ob-Yez"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -200,11 +191,20 @@
                                     <action selector="backBtnPressed:" destination="DrY-Wl-1j7" eventType="touchUpInside" id="UhN-KY-QgM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time remaining until caffeine crash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt2-lG-8nm">
-                                <rect key="frame" x="54" y="139" width="267" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time remaining until caffeine crash:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt2-lG-8nm">
+                                <rect key="frame" x="51.5" y="210" width="272" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="oga-j8-ZFm"/>
-                                    <constraint firstAttribute="width" constant="267" id="rJ1-Jd-So1"/>
+                                    <constraint firstAttribute="width" constant="272" id="Bvp-YD-74x"/>
+                                    <constraint firstAttribute="height" constant="21" id="TWf-WM-BRO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time-Remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-QY-ZQ4">
+                                <rect key="frame" x="124" y="270" width="126" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4bc-p3-dJu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -213,24 +213,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wt2-lG-8nm" firstAttribute="top" secondItem="Zn4-rM-5we" secondAttribute="bottom" constant="89" id="6MS-LV-qMa"/>
-                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9Bv-6N-i7B"/>
-                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9On-4k-Ozp"/>
-                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9lu-VE-i7t"/>
+                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="leading" secondItem="Zn4-rM-5we" secondAttribute="trailing" constant="170" id="1pp-8t-EQS"/>
+                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="top" secondItem="Tw8-Nq-Vk7" secondAttribute="bottom" constant="70" id="77t-rv-9si"/>
+                            <constraint firstItem="wt2-lG-8nm" firstAttribute="top" secondItem="HRs-Bt-Gpe" secondAttribute="bottom" constant="60" id="89u-P2-OSX"/>
+                            <constraint firstItem="wt2-lG-8nm" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="9SU-RN-PpF"/>
                             <constraint firstItem="Zn4-rM-5we" firstAttribute="leading" secondItem="fgB-qj-uMV" secondAttribute="leadingMargin" id="Aas-fG-p00"/>
-                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="top" secondItem="HRs-Bt-Gpe" secondAttribute="bottom" constant="20" id="CQT-4M-UPi"/>
-                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="EZ5-bq-7nf"/>
-                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="top" secondItem="wt2-lG-8nm" secondAttribute="bottom" constant="20" id="Mbh-vf-4PT"/>
-                            <constraint firstItem="wt2-lG-8nm" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="YUn-Kt-d0s"/>
-                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="top" secondItem="jhl-QY-ZQ4" secondAttribute="bottom" constant="20" id="kiR-fh-Aqr"/>
-                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="qv0-b4-yc7"/>
+                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="DvU-h4-3IM"/>
+                            <constraint firstItem="Tw8-Nq-Vk7" firstAttribute="top" secondItem="Ikc-gt-ihz" secondAttribute="bottom" constant="10" id="N3z-ES-5y1"/>
+                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="top" secondItem="wt2-lG-8nm" secondAttribute="bottom" constant="39" id="UJT-KI-6a8"/>
+                            <constraint firstItem="jhl-QY-ZQ4" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="qyz-K8-uJg"/>
                             <constraint firstItem="Zn4-rM-5we" firstAttribute="top" secondItem="Ikc-gt-ihz" secondAttribute="bottom" id="rVp-hV-iQ9"/>
-                            <constraint firstItem="HRs-Bt-Gpe" firstAttribute="centerX" secondItem="fgB-qj-uMV" secondAttribute="centerX" id="w7R-65-lBl"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ageLbl" destination="HRs-Bt-Gpe" id="wFx-Yl-PeC"/>
                         <outlet property="caffeineConsumedLbl" destination="Tw8-Nq-Vk7" id="bfk-7D-jgn"/>
+                        <outlet property="halfLife" destination="HRs-Bt-Gpe" id="ezg-0A-cd8"/>
                         <outlet property="weightLbl" destination="jhl-QY-ZQ4" id="uDF-cw-E83"/>
                     </connections>
                 </viewController>

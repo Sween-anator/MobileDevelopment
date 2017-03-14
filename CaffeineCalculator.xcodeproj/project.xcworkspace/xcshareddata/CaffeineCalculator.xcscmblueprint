@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B3A5193F0CC3EFBBF8A00ED71C38C4501DE05626",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B3A5193F0CC3EFBBF8A00ED71C38C4501DE05626" : 9223372036854775807,
+    "79F3556EE30119F2B42FCFFC59511F6D0DD5972E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "020F484B-D2EF-4E61-AC28-80CD735D49E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B3A5193F0CC3EFBBF8A00ED71C38C4501DE05626" : "CaffeineCalculator\/",
+    "79F3556EE30119F2B42FCFFC59511F6D0DD5972E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CaffeineCalculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CaffeineCalculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Sween-anator\/PracIOSApps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "79F3556EE30119F2B42FCFFC59511F6D0DD5972E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Sween-anator\/MobileDevelopment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B3A5193F0CC3EFBBF8A00ED71C38C4501DE05626"
+    }
+  ]
+}

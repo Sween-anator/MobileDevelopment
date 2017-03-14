@@ -10,16 +10,19 @@ import UIKit
 
 class InputVC: UIViewController, UITextFieldDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     // MARK: Outlets
-    
     @IBOutlet weak var ageTxt: UITextField!
     @IBOutlet weak var weightTxt: UITextField!
     @IBOutlet weak var caffeineTxt: UITextField!
+    
+    let limitLength = 2
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ageTxt.delegate = self
+    }
+    
     
     // MARK: Actions
     @IBAction func dismissKeyBoard(_ sender: UITapGestureRecognizer) {
@@ -31,7 +34,7 @@ class InputVC: UIViewController, UITextFieldDelegate {
         performSegue(withIdentifier: "CaffeineClockVC", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any ) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
         if let destination = segue.destination as?
             CaffeineClockVC{
             
@@ -41,6 +44,11 @@ class InputVC: UIViewController, UITextFieldDelegate {
                 destination.caffeine = caffeineTxt.text!
             
         }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
+        let newLength = text.characters.count + string.characters.count - range.length
+        return newLength <= limitLength // Bool
     }
 }
 

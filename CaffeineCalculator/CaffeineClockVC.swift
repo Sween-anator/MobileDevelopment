@@ -10,13 +10,15 @@ import UIKit
 
 class CaffeineClockVC: UIViewController {
 
-    @IBOutlet weak var ageLbl: UILabel!
+    @IBOutlet weak var halfLife: UILabel!
     @IBOutlet weak var weightLbl: UILabel!
     @IBOutlet weak var caffeineConsumedLbl: UILabel!
     
     private var _age:String!
     private var _weight:String!
     private var _caffeine:String!
+    
+    private var result = ""
     
     // Getter and Setter for variables
     var age: String{
@@ -42,20 +44,21 @@ class CaffeineClockVC: UIViewController {
         }
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ageLbl.text = _age!
+        halfLife.text = "The half-life for \(age)Mg of caffeine is 5.7 hours"
         weightLbl.text = _weight!
-        caffeineConsumedLbl.text = _caffeine!
-        view.backgroundColor = UIColor.blue
+        caffeineConsumedLbl.text = "\(caffeine)mg"
+        view.backgroundColor = UIColor.red
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func calculateCaffeine(age: String, weight: String, caffeine: String){
+        result = "\(Int(caffeine)!  )"
     }
 
 }
