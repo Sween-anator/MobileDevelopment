@@ -22,6 +22,7 @@ class InputVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         ageTxt.delegate = self
         let stringKey = UserDefaults.standard
         savedCaffieneLbl.text = stringKey.string(forKey: "savedStringKey")
@@ -36,13 +37,13 @@ class InputVC: UIViewController, UITextFieldDelegate {
         
     }
     
-    
-    // MARK: Actions
-    @IBAction func dismissKeyBoard(_ sender: UITapGestureRecognizer) {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         ageTxt.resignFirstResponder()
         weightTxt.resignFirstResponder()
         caffeineTxt.resignFirstResponder()
+        return true
     }
+    // MARK: Actions
     
     @IBAction func savedCaffeine(_ sender: Any) {
         let caffeineText = caffeineTxt.text
